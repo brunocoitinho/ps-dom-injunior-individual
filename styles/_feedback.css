@@ -1,0 +1,47 @@
+.feedback{
+    padding: 30px;
+    min-height: 289px;
+}
+
+.feedback__title{
+    margin-bottom: 10px;
+}
+
+.feedback__form{
+    margin: 0 auto;
+    text-align: right;
+    width: 100%;
+    max-width: 1128px;
+}
+
+.feedback__form__input{
+    display: block;
+    height: 56px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #c3c4bf;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    
+}
+
+.feedback__form__input::placeholder{
+    color: rgba(0, 0, 0, 0.485);
+    font-weight: bold;
+}
+
+
+.feedback__form__input:focus{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+@media(max-width:48rem){
+    .feedback__form{
+        text-align: center;
+    }
+}
+
+

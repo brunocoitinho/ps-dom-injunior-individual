@@ -1,0 +1,14 @@
+.lists{
+    display: flex;
+    justify-content: space-between;
+    min-height: 289px;
+}
+
+@media (max-width:48rem){
+    .lists{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+}

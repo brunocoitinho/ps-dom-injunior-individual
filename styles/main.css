@@ -1,0 +1,96 @@
+@import url(_variables.css);
+@import url(_header.css);
+@import url(_about.css);
+@import url(_lists.css);
+@import url(_feedback.css);
+@import url(_footer.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.text{
+    font-size: 1rem;
+}
+
+.text--small{
+    font-size: 0.75rem;
+}
+
+.text--big{
+    font-size: 1.5rem;
+}
+
+.card-colection{
+    padding: 20px;
+}
+.card-colection__title{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.card-colection__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card-colection:first-child .card-colection__title{
+    text-align: right;
+}
+
+.card-colection__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 102px;
+    padding: 17px;
+    border-radius: 4px;
+}
+
+.button{
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--br-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: .5s;
+    font-weight: bold;
+    min-width: 127px;
+    min-height: 39px;
+    font-size: 1rem;
+}
+
+.button:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+@media (max-width:48rem){
+    .card-colection:first-child .card-colection__title{
+        text-align: left;
+    }
+}
+
+

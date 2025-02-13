@@ -1,0 +1,125 @@
+.header{
+    display: flex;
+    background-color: var(--header-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    height: 109px;
+    width: 100%;
+    padding: 28px 30px;
+    position: fixed;
+}
+
+.header i{
+    display: none;
+    cursor: pointer;
+}
+
+.fake-trigger{
+    display: none;
+    cursor: pointer;
+}
+
+
+.header__main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header__menu{
+    display: block;
+    width: 30%;
+}
+
+.header__menu__link{
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.header__menu__link:hover{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.header__menu__item{
+    list-style: none;
+}
+
+.header__menu__list{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media (max-width: 48rem) {
+    .header__menu{
+        display: none;
+    }
+
+    .header__main{
+        width: auto;
+    }
+    .header i{
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+
+    .fake-trigger{
+        z-index: 999;
+        display: block;
+        position: absolute;
+        right: 30px;
+        width: 1.5rem;
+        height: 1.5rem;
+        opacity: 0;
+    }
+
+    .fake-trigger:checked ~ .header__menu{
+        display: block;
+        position: absolute;
+        right: -9vw;
+        top: 75px;
+        width: 30%;
+        transition: 0.5s;
+    }
+
+    .fake-trigger:checked ~ i{
+        color: white;
+    }
+
+    .header__menu__list{
+        text-align: right;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100px;
+        position: relative;
+        width: 100px;
+    }
+
+    .header__menu__item{
+        width: 100%;
+    }
+
+    .header__menu__link{
+        width: 100%;
+        display: block;
+        border-radius: 0;
+        border: .2px solid var(--primary-color);
+    }
+    
+
+}
