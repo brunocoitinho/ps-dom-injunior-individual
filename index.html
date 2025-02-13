@@ -64,10 +64,15 @@
         <section class="feedback">
             <h2 class="feedback__title text--big">Feedback</h2>
             <form action="" class="feedback__form">
-                <input type="text" class="feedback__form__input" required placeholder="Dê um feedback para esse desenvolvedor!">
-                <input type="text" class="feedback__form__input" required placeholder="Digite seu nome aqui">
-                <button type="submit" class="button">Enviar</button>
+                <input type="text" class="feedback__form__input" id="feedback-content" required placeholder="Dê um feedback para esse desenvolvedor!">
+                <input type="text" class="feedback__form__input" id="feedback-name" required placeholder="Digite seu nome aqui">
+                <button type="submit" class="button" id="feedback-btn">Enviar</button>
             </form>
+            <div class="card-colection" id="feedback-colection">
+                <ul class="card-colection__container card-colection__container--feedback">
+                </ul>
+            </div>
+            
         </section>
     </main>
     <footer class="footer">
@@ -79,6 +84,6 @@
         </div>
         <a class="button" href="https://www.linkedin.com/in/bruno-coitinho/" target="_blank">Entre em contato</a>
     </footer>
-    
+    <script src="main.js"></script>
 </body>
 </html>
